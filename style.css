@@ -1,0 +1,212 @@
+:root {
+  /* Size */
+  --side-padding: 12px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+
+  /* Font Family */
+  --font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100vw;
+  height: 68px;
+  background-color: #ff7777;
+  color: white;
+  font-family: var(--font-family);
+  z-index: 1;
+}
+
+header .container {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+header .container ul {
+  font-size: 18px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+/* Home */
+.main {
+  height: 100vh;
+  padding-top: 160px;
+  background: #ff7777;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce 0.4s ease infinite alternate;
+  font-family: "Titan One", cursive;
+  font-size: 160px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.main h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.main h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.main h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.main h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.main h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.main h1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.main h1 span:nth-child(9) {
+  animation-delay: 0.7s;
+}
+.main h1 span:nth-child(10) {
+  animation-delay: 0.7s;
+}
+.main h1 span:nth-child(11) {
+  animation-delay: 0.7s;
+}
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.main .job {
+  display: flex;
+  font-family: "Titan One", cursive;
+  color: bisque;
+  font-size: 60px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.main .menubtn {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+
+.main .menubtn button {
+  margin: 0 20px;
+  font-size: 26px;
+  padding: 20px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 20px;
+}
+
+a {
+  padding-top: 80px;
+}
+a span {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.main .scroll {
+  display: flex;
+  color: white;
+  font-size: var(--font-medium);
+  font-family: var(--font-family);
+  font-weight: 300;
+  margin-top: 20px;
+  align-items: center;
+}
