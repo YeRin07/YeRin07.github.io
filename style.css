@@ -25,49 +25,65 @@ body {
 }
 
 /* Header */
-header {
-  position: fixed;
-  width: 100vw;
-  height: 68px;
-  background-color: #ff7777;
-  color: white;
+header .container #navbar {
   font-family: var(--font-family);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  left: 0;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  transition: top 0.4s;
   z-index: 1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-header .container {
-  width: 1280px;
-  height: 100%;
+header .container #navbar a {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  color: black;
+  margin: 0 100px;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
 }
 
-header .container .logo {
-  font-size: 26px;
-  font-weight: 800;
+header .container #navbar a:hover {
+  color: rgb(255, 181, 91);
 }
 
-header .container ul {
-  font-size: 18px;
-  list-style-type: none;
-  margin: 0;
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  font-weight: 600;
+@media screen and (max-width: 768px) {
+  .header .container .navbar {
+  }
 }
 
 /* Home */
 .main {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 240% 240%;
+  animation: gradient 10s ease infinite;
   height: 100vh;
   padding-top: 160px;
-  background: #ff7777;
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .main h1 span {
@@ -76,7 +92,7 @@ header .container ul {
   display: inline-block;
   animation: bounce 0.4s ease infinite alternate;
   font-family: "Titan One", cursive;
-  font-size: 160px;
+  font-size: 180px;
   color: #fff;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
     0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
@@ -126,25 +142,31 @@ header .container ul {
 .main .job {
   display: flex;
   font-family: "Titan One", cursive;
-  color: bisque;
+  color: rgb(255, 181, 91);
   font-size: 60px;
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .main .menubtn {
   display: flex;
   justify-content: center;
-  font-family: var(--font-family);
 }
 
 .main .menubtn button {
   margin: 0 20px;
-  font-size: 26px;
-  padding: 20px;
-  font-weight: 600;
-  background-color: white;
-  border-radius: 20px;
+  font-size: 22px;
+  padding: 20px 30px;
+  font-weight: 400;
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-family: var(--font-family);
+}
+
+.main .menubtn button:hover {
+  background-color: rgb(255, 181, 91);
 }
 
 a {
@@ -207,6 +229,6 @@ a span:nth-of-type(3) {
   font-size: var(--font-medium);
   font-family: var(--font-family);
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 28px;
   align-items: center;
 }
