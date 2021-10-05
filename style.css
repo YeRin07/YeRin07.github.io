@@ -192,7 +192,7 @@ header .container #navbar a:hover {
   color: rgb(255, 181, 91);
   font-size: 60px;
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .main .menubtn {
@@ -281,6 +281,7 @@ a span::before {
 .main .scroll {
   position: absolute;
   bottom: 8%;
+  top: 90%;
   color: white;
   font-size: var(--font-medium);
   font-family: var(--font-family);
@@ -301,8 +302,8 @@ a span::before {
     font-family: "Titan One", cursive;
     color: white;
     font-size: 70px;
-    margin-bottom: 20px;
-    margin-top: -50px;
+    margin-bottom: 6%;
+    margin-top: 8%;
   }
 
   .main .job {
@@ -322,6 +323,14 @@ a span::before {
 
   .main a {
     padding-top: 0;
+  }
+
+  .main a {
+    display: none;
+  }
+
+  .main .scroll {
+    display: none;
   }
 }
 
