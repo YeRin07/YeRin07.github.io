@@ -19,14 +19,34 @@ window.onresize = function(){
 // 토글버튼
 const toggleBtn = document.querySelector('.navbar__toogleBtn');
 
+// 메뉴 아이콘
+const btn = document.getElementById("menu-icon");
+const burger_class = "fas fa-bars";
+const close_class = "fas fa-times";
+
 toggleBtn.addEventListener('click', () => {
     navbar.classList.toggle('active');
-    const btn = document.getElementById("menu-icon");
-    const burger_class = "fas fa-bars";
-    const close_class = "fas fa-times";
     btn.className = btn.className ==
         burger_class ? close_class : burger_class;
 });
+
+const menuBtns = document.querySelectorAll('.container #navbar li');
+const nav = document.querySelector('.container #navbar');
+
+for(var menuBtn of menuBtns) {
+    menuBtn.addEventListener('click', () => {
+        nav.classList.remove('active');
+        btn.className = burger_class;
+    })
+}
+
+/* for(var i=0; i<4; i++) {
+    const menuBtn = document.querySelector('.container #navbar .active' + (i+1));
+    menuBtn.addEventListener('click', () => {
+        nav.classList.remove('active');
+        btn.className = burger_class;
+    })
+} */
 
 /* function navOn() {
     var nowTop = $(window).scrollTop();

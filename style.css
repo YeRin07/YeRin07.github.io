@@ -60,6 +60,7 @@ header .container .navbar__toogleBtn {
   right: 0;
   padding: 0;
   z-index: 1;
+  cursor: pointer;
   display: none;
 }
 
