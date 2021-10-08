@@ -40,14 +40,6 @@ for(var menuBtn of menuBtns) {
     })
 }
 
-/* for(var i=0; i<4; i++) {
-    const menuBtn = document.querySelector('.container #navbar .active' + (i+1));
-    menuBtn.addEventListener('click', () => {
-        nav.classList.remove('active');
-        btn.className = burger_class;
-    })
-} */
-
 /* function navOn() {
     var nowTop = $(window).scrollTop();
     var sec1_offset = $('#main').offset().top - 120;
@@ -70,17 +62,25 @@ for(var menuBtn of menuBtns) {
 };
 navOn();
 
-// 4. scroll function을 넣어 scroll을 트리거로 이벤트를 발생시킨다.
+/* // 스크롤 위치에 맞게 헤더 활성화
 $(window).scroll(function() {
-    navOn();
-}); */
+    let scroll = $(window).scrollTop();
 
-// Active
-/* var targetLink = document.querySelectorAll('.navbar a');{
-    for( var j=0; j<targetLink.length; j++){
-    targetLink[j].classList.remove('active');
-    document.getElementById('tab-content').classList.add('active');
-    }
-} */
+    for (let i = 0; i < $(".navbar li").length; i++) {
+        let articleTop = $(".navbar li").eq(i).offset().top;
+        let articleBottom = articleTop + $(".navbar li").eq(i).outerHeight();
+        let winHeight = $(window).height();
+        let scrollBottom = $(".container").height() - winHeight - 50;
+
+        if (scroll >= articleTop - 51 && scroll < articleBottom) {
+            $(".navbar li a").removeClass("active");
+            $(".navbar li a").eq(i).addClass("active");
+        }
+
+        if (scroll >= scrollBottom) {
+            $(".navbar li a").eq(2).removeClass("active");
+            $(".navbar li a").eq(3).addClass("active");
+        }
+    } */
 
 
