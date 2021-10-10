@@ -40,6 +40,22 @@ for(var menuBtn of menuBtns) {
     })
 }
 
+//타이핑 애니메이션
+const content = "'소통하며 채워나가는 개발자입니다.'\u00A0";
+const text = document.querySelector(".contents");
+let i = 0;
+
+function typing(){
+    let txt = content[i++];
+    text.innerHTML += txt;
+    if (i > content.length) {
+
+        text.textContent = '\u00A0';
+        i = 0;
+    }
+}
+setInterval(typing, 200)
+
 /* function navOn() {
     var nowTop = $(window).scrollTop();
     var sec1_offset = $('#main').offset().top - 120;

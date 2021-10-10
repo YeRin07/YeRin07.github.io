@@ -389,14 +389,26 @@ a span::before {
   width: 336px;
   height: auto;
   margin-right: 16px;
+  border-style: solid dashed solid solid;
+  border-color: rgb(255, 181, 91);
+  border-width: 5px;
+  border-radius: 16px;
 }
 
 .about-me .info .information {
   width: 978px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 5px dashed rgb(255, 181, 91);
+  border-style: solid solid solid dashed;
+  border-color: rgb(255, 181, 91);
+  border-width: 5px;
+  border-radius: 16px;
+  background-image: url("img/airplane.png");
+  background-repeat: no-repeat;
+  background-size: 260px 260px;
+  background-position: 94% 50%;
 }
 
 .about-me .info .information .item1 {
@@ -408,21 +420,35 @@ a span::before {
 }
 
 .about-me .info .information .item1 .name {
-  margin: 0px 70px 0px 0px;
   text-align: center;
+  font-size: 24px;
 }
 
 .about-me .info .information .item1 .education {
-  margin: 0px 0px 0px 70px;
+  margin: 0px 0px 0px 80px;
   text-align: center;
+  font-size: 24px;
+}
+
+.about-me .info .information .item1 .call {
+  margin: 0px 0px 0px 80px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .about-me .info .information .item2 {
   display: flex;
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   justify-content: center;
+}
+
+.about-me .info .information .item2 .contents {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
 
 .about-me .skills {
@@ -438,7 +464,7 @@ a span::before {
   justify-content: center;
   font-family: "Titan One", cursive;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: rgb(255, 181, 91);
   color: white;
   padding: 0%;
