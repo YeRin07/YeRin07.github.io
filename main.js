@@ -49,12 +49,11 @@ function typing(){
     let txt = content[i++];
     text.innerHTML += txt;
     if (i > content.length) {
-
         text.textContent = '\u00A0';
         i = 0;
     }
 }
-setInterval(typing, 200)
+setInterval(typing, 200);
 
 /* function navOn() {
     var nowTop = $(window).scrollTop();

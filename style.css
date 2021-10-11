@@ -490,3 +490,273 @@ a span::before {
   width: 100px;
   height: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .about-me .title {
+    width: 100%;
+    height: 100%;
+    margin: 10vh auto 3vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Titan One", cursive;
+    font-size: 5vw;
+    color: rgb(255, 181, 91);
+  }
+
+  .about-me .info {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 2%;
+  }
+
+  .about-me .info img {
+    width: 25vw;
+    height: auto;
+    margin-right: 16px;
+    border-style: solid dashed solid solid;
+    border-color: rgb(255, 181, 91);
+    border-width: 5px;
+    border-radius: 16px;
+  }
+
+  .about-me .info .information {
+    width: 978px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-style: solid solid solid dashed;
+    border-color: rgb(255, 181, 91);
+    border-width: 5px;
+    border-radius: 16px;
+    background-image: url("img/airplane.png");
+    background-repeat: no-repeat;
+    background-size: 19vh 19vw;
+    background-position: 94% 50%;
+  }
+
+  .about-me .info .information .item1 {
+    display: flex;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 1.8vw;
+    justify-content: center;
+  }
+
+  .about-me .info .information .item1 .name {
+    text-align: center;
+    font-size: 1.8vw;
+  }
+
+  .about-me .info .information .item1 .education {
+    margin: 0px 0px 0px 80px;
+    text-align: center;
+    font-size: 1.8vw;
+  }
+
+  .about-me .info .information .item1 .call {
+    margin: 0px 0px 0px 80px;
+    text-align: center;
+    font-size: 1.8vw;
+  }
+
+  .about-me .info .information .item2 {
+    display: flex;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 3.6vw;
+    justify-content: center;
+  }
+
+  .about-me .info .information .item2 .contents {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .about-me .skills {
+    width: 100%;
+    margin-top: 6vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 2%;
+  }
+
+  .about-me .skills .item3 {
+    display: flex;
+    justify-content: center;
+    font-family: "Titan One", cursive;
+    font-weight: 400;
+    font-size: 4vw;
+    background-color: rgb(255, 181, 91);
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 30px;
+  }
+
+  .about-me .skills .icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0%;
+    margin-top: 2.6vh;
+  }
+
+  .about-me .skills .icons li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-me .skills .icons li img {
+    width: 8vw;
+    height: auto;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1315px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .about-me .title {
+    width: 100%;
+    height: 100%;
+    margin: 10vh auto 3vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Titan One", cursive;
+    font-size: 5vw;
+    color: rgb(255, 181, 91);
+  }
+
+  .about-me .info {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 2%;
+  }
+
+  .about-me .info img {
+    width: 25vw;
+    height: auto;
+    margin-right: 16px;
+    border-style: solid dashed solid solid;
+    border-color: rgb(255, 181, 91);
+    border-width: 5px;
+    border-radius: 16px;
+  }
+
+  .about-me .info .information {
+    width: 978px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-style: solid solid solid dashed;
+    border-color: rgb(255, 181, 91);
+    border-width: 5px;
+    border-radius: 16px;
+    background-image: url("img/airplane.png");
+    background-repeat: no-repeat;
+    background-size: 19vh 19vw;
+    background-position: 94% 50%;
+  }
+
+  .about-me .info .information .item1 {
+    display: flex;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 1.8vw;
+    justify-content: center;
+  }
+
+  .about-me .info .information .item1 .name {
+    text-align: center;
+    font-size: 1.8vw;
+  }
+
+  .about-me .info .information .item1 .education {
+    margin: 0px 0px 0px 80px;
+    text-align: center;
+    font-size: 1.8vw;
+  }
+
+  .about-me .info .information .item1 .call {
+    margin: 0px 0px 0px 80px;
+    text-align: center;
+    font-size: 1.8vw;
+  }
+
+  .about-me .info .information .item2 {
+    display: flex;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 3.6vw;
+    justify-content: center;
+  }
+
+  .about-me .info .information .item2 .contents {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .about-me .skills {
+    width: 100%;
+    margin-top: 6vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 2%;
+  }
+
+  .about-me .skills .item3 {
+    display: flex;
+    justify-content: center;
+    font-family: "Titan One", cursive;
+    font-weight: 400;
+    font-size: 4vw;
+    background-color: rgb(255, 181, 91);
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 30px;
+  }
+
+  .about-me .skills .icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0%;
+    margin-top: 2.6vh;
+  }
+
+  .about-me .skills .icons li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-me .skills .icons li img {
+    width: 8vw;
+    height: auto;
+  }
+}
