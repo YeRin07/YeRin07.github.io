@@ -55,7 +55,6 @@ function typing(){
 }
 setInterval(typing, 200);
 
-
 /* function navOn() {
     var nowTop = $(window).scrollTop();
     var sec1_offset = $('#main').offset().top - 120;
