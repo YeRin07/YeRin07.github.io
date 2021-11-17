@@ -917,7 +917,7 @@ a span::before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 #portfolio .page-2 {
@@ -962,14 +962,13 @@ a span::before {
 
 /* contact */
 .contact {
-  margin: 150px 0 0;
+  margin: 240px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 181, 91);
-  border-top-style: dashed;
-  border-color: white;
-  border-top-width: 8px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 240% 240%;
+  animation: gradient 10s ease infinite;
 }
 
 .contact h1 {
@@ -987,23 +986,59 @@ a span::before {
 .contact li {
   font-family: var(--font-family);
   list-style: none;
-  margin: 24px 0;
+  margin: 30px 0;
   background-color: white;
   padding: 4px 16px 8px;
   border-radius: 20px;
 }
 
 .contact li img {
-  width: 30px;
-  height: 30px;
-  margin-right: 16px;
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
 }
 
 .contact li span {
-  font-size: 18px;
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+
+.contact .git a {
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+
+.contact .git a:hover {
+  text-decoration: none;
+  color: rgb(255, 181, 91);
+}
+
+.contact .git {
+  padding: 4px 16px 6px;
+}
+
+.contact .number {
+  padding: 4px 16px 6px;
 }
 
 .contact .email img {
-  width: 30px;
-  height: 24px;
+  width: 26px;
+  height: 20px;
+}
+
+/* TOP */
+#top a {
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+#top img {
+  padding: 0%;
+  width: 40px;
+  height: 36px;
 }
