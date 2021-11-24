@@ -875,6 +875,7 @@ a span::before {
   width: 500px;
   height: 540px;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 #portfolio .page-1 {
@@ -900,6 +901,7 @@ a span::before {
   font-family: var(--font-family);
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 #portfolio .page-1 .text-1-4 {
@@ -909,6 +911,46 @@ a span::before {
   display: flex;
   justify-content: space-around;
   align-self: flex-end;
+}
+
+#portfolio .page-1 .text-1-4 .page1_git {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin-right: 20px;
+  border: solid 2px;
+  border-color: black;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+#portfolio .page-1 .text-1-4 .page1_git:hover {
+  color: white;
+  background-color: rgb(255, 181, 91);
+  border-color: rgb(255, 181, 91);
+}
+
+#portfolio .page-1 .text-1-4 .page1_site {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin-left: 20px;
+  border: solid 2px;
+  border-color: black;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+#portfolio .page-1 .text-1-4 .page1_site:hover {
+  color: white;
+  background-color: rgb(255, 181, 91);
+  border-color: rgb(255, 181, 91);
 }
 
 #portfolio .portfolio-2 {
@@ -943,21 +985,61 @@ a span::before {
   font-family: var(--font-family);
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 #portfolio .page-2 .text-2-4 {
   font-family: var(--font-family);
   font-size: 20px;
   font-weight: 400;
-  display: flex;
-  justify-content: space-around;
-  align-self: flex-end;
+  text-align: center;
+}
+
+#portfolio .page-2 .text-2-4 .page2_git {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin-right: 20px;
+  border: solid 2px;
+  border-color: black;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+#portfolio .page-2 .text-2-4 .page2_git:hover {
+  color: white;
+  background-color: rgb(255, 181, 91);
+  border-color: rgb(255, 181, 91);
+}
+
+#portfolio .page-2 .text-2-4 .page2_site {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin-left: 20px;
+  border: solid 2px;
+  border-color: black;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+#portfolio .page-2 .text-2-4 .page2_site:hover {
+  color: white;
+  background-color: rgb(255, 181, 91);
+  border-color: rgb(255, 181, 91);
 }
 
 #portfolio .portfolio-2 img {
   width: 500px;
   height: 540px;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 @media all and (min-width: 768px) and (max-width: 1315px) {
@@ -1040,7 +1122,7 @@ a span::before {
     text-decoration: none;
     display: inline-block;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 20px;
     border: solid 2px;
     border-color: black;
     border-radius: 10px;
@@ -1115,7 +1197,7 @@ a span::before {
     text-decoration: none;
     display: inline-block;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 20px;
     border: solid 2px;
     border-color: black;
     border-radius: 10px;
@@ -1210,7 +1292,7 @@ a span::before {
     text-decoration: none;
     display: inline-block;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 20px;
     border: solid 2px;
     border-color: black;
     border-radius: 10px;
@@ -1284,7 +1366,7 @@ a span::before {
     text-decoration: none;
     display: inline-block;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 20px;
     border: solid 2px;
     border-color: black;
     border-radius: 10px;
