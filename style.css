@@ -1397,7 +1397,7 @@ a span::before {
   font-family: "Titan One", cursive;
   font-size: 51px;
   color: white;
-  margin-right: 200px;
+  margin-right: 14vw;
 }
 
 .contact ul {
@@ -1439,6 +1439,14 @@ a span::before {
   padding: 4px 16px 6px;
 }
 
+.contact .git a {
+  text-decoration: none;
+}
+
+.contact .git a:visited {
+  text-decoration: none;
+}
+
 .contact .number {
   padding: 4px 16px 6px;
 }
@@ -1448,6 +1456,88 @@ a span::before {
   height: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact {
+    margin: 70px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 240% 240%;
+    animation: gradient 10s ease infinite;
+    padding: 0 20px;
+  }
+
+  .contact h1 {
+    font-family: "Titan One", cursive;
+    font-size: 51px;
+    color: white;
+    margin: 0;
+    margin-top: 26px;
+  }
+
+  .contact ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact li {
+    font-family: var(--font-family);
+    list-style: none;
+    margin: 30px 0;
+    background-color: white;
+    padding: 4px 16px 8px;
+    border-radius: 20px;
+  }
+
+  .contact li img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+  }
+
+  .contact li span {
+    font-family: var(--font-family);
+    font-size: 16px;
+  }
+
+  .contact .git a {
+    font-family: var(--font-family);
+    font-size: 16px;
+  }
+
+  .contact .git a:hover {
+    text-decoration: none;
+    color: rgb(255, 181, 91);
+  }
+
+  .contact .git {
+    padding: 4px 16px 6px;
+  }
+
+  .contact .git a {
+    text-decoration: none;
+  }
+
+  .contact .git a:visited {
+    text-decoration: none;
+  }
+
+  .contact .number {
+    padding: 4px 16px 6px;
+  }
+
+  .contact .email img {
+    width: 26px;
+    height: 20px;
+  }
+
+  .contact .email {
+    margin-bottom: 40px;
+  }
+}
+
 /* TOP */
 #top a {
   width: 100%;
@@ -1455,12 +1545,23 @@ a span::before {
   padding: 0%;
   display: flex;
   justify-content: center;
-  margin-bottom: 6px;
   margin-top: 6px;
+  padding: 0 20px;
 }
 
 #top img {
   padding: 0%;
   width: 40px;
   height: 36px;
+}
+
+#top p {
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  padding: 0 20px;
 }
