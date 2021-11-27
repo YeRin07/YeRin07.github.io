@@ -513,26 +513,26 @@ a span::before {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-me {
     display: flex;
     flex-direction: column;
-    font-size: 10px;
     width: 100%;
     height: auto;
-    padding: 8.4vh 6vw 10vh;
     justify-content: center;
+    padding: 0;
+    padding-top: 70px;
   }
 
   .about-me .title {
-    margin: 0%;
-    margin-bottom: 2%;
+    margin: 0;
+    margin-bottom: 30px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     font-family: "Titan One", cursive;
-    font-size: 5vw;
+    font-size: 51px;
     color: rgb(255, 181, 91);
   }
 
@@ -543,20 +543,19 @@ a span::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 10%;
   }
 
   .about-me .info img {
-    width: 32vw;
+    width: 340px;
     height: auto;
     display: flex;
     justify-content: center;
-    margin: 0%;
-    margin-bottom: 1.5vw;
+    margin-bottom: 50px;
     border-style: solid;
     border-color: rgb(255, 181, 91);
     border-width: 3px;
     border-radius: 100%;
+    margin: 0 20px;
   }
 
   .about-me .info .information {
@@ -568,8 +567,11 @@ a span::before {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 3%;
+    margin: 40px 0;
+    max-width: 600px;
+    padding: 0 20px;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .about-me .info .information_s .item1_s {
@@ -582,36 +584,36 @@ a span::before {
     border-color: rgb(255, 181, 91);
     border-width: 3px;
     border-radius: 16px;
-    width: 550px;
+    width: 860px;
     height: auto;
-    padding: 5% 4%;
+    padding: 20px 10px;
   }
 
   .about-me .info .information_s .item1_s .name_s {
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 18px;
     font-weight: 500;
-    margin-bottom: 6%;
+    margin-bottom: 20px;
   }
 
   .about-me .info .information_s .item1_s .education_s {
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 18px;
     font-weight: 500;
+    margin-bottom: 20px;
   }
 
   .about-me .info .information_s .item1_s .call_s {
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 18px;
     font-weight: 500;
-    margin-top: 6%;
   }
 
   .about-me .info .information_s .item2_s {
     display: flex;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 22px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -619,12 +621,199 @@ a span::before {
     border-color: rgb(255, 181, 91);
     border-width: 3px;
     border-radius: 16px;
-    margin-left: 1vw;
+    margin-left: 8px;
     background-image: url("img/airplane.png");
     background-repeat: no-repeat;
     background-size: 80% 80%;
     background-position: 50% 50%;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .about-me .info .information_s .item2_s .contents_s {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .about-me .skills {
+    display: none;
+  }
+
+  .about-me .skills_s {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 181, 91);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me .skills_s .item3_s {
+    color: white;
+    font-family: "Titan One", cursive;
+    font-size: 51px;
+    margin-top: 20px;
+  }
+
+  .about-me .skills_s .icons_s {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    padding: 0;
+  }
+
+  .about-me .skills_s .icons_s li {
+    list-style: none;
+  }
+
+  .about-me .skills_s .icons_s li img {
+    width: 100px;
+    padding: 0 10px;
+  }
+
+  .about-me .skills_s .icons2_s {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 38px;
+  }
+
+  .about-me .skills_s .icons2_s li {
+    list-style: none;
+  }
+
+  .about-me .skills_s .icons2_s li img {
+    width: 100px;
+    padding: 0 10px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1315px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 0;
+  }
+
+  .about-me .title {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Titan One", cursive;
+    font-size: 51px;
+    color: rgb(255, 181, 91);
+  }
+
+  .about-me .info {
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me .info img {
+    width: 340px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-color: rgb(255, 181, 91);
+    border-width: 3px;
+    border-radius: 100%;
+    margin: 0 20px;
+  }
+
+  .about-me .info .information {
+    display: none;
+  }
+
+  .about-me .info .information_s {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+    max-width: 760px;
+    height: 220px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about-me .info .information_s .item1_s {
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid dashed solid solid;
+    border-color: rgb(255, 181, 91);
+    border-width: 3px;
+    border-radius: 16px;
+    width: 860px;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .about-me .info .information_s .item1_s .name_s {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .about-me .info .information_s .item1_s .education_s {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .about-me .info .information_s .item1_s .call_s {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .about-me .info .information_s .item2_s {
+    display: flex;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-style: solid solid solid dashed;
+    border-color: rgb(255, 181, 91);
+    border-width: 3px;
+    border-radius: 16px;
+    margin-left: 8px;
+    background-image: url("img/airplane.png");
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: 50% 50%;
+    max-width: 250px;
+    width: 100%;
   }
 
   .about-me .info .information_s .item2_s .contents_s {
@@ -640,28 +829,28 @@ a span::before {
 
   .about-me .skills_s {
     display: flex;
-    text-align: center;
-    align-items: center;
-    width: 80%;
-    height: auto;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 760px;
+    width: 100%;
+    padding: 0 20px;
     background-color: rgb(255, 181, 91);
-    color: white;
-    font-family: "Titan One", cursive;
-    font-size: 5vw;
     border-radius: 16px;
-    margin: 4% 10% 0% 10%;
   }
 
   .about-me .skills_s .item3_s {
-    margin-top: 5%;
+    color: white;
+    font-family: "Titan One", cursive;
+    font-size: 51px;
+    margin-top: 20px;
   }
 
   .about-me .skills_s .icons_s {
     display: flex;
     flex-direction: row;
-    padding: 0%;
-    margin-top: 2%;
+    margin-top: 12px;
+    padding: 0;
   }
 
   .about-me .skills_s .icons_s li {
@@ -669,16 +858,16 @@ a span::before {
   }
 
   .about-me .skills_s .icons_s li img {
-    width: 12.5vw;
-    padding: 0% 10%;
+    width: 130px;
+    padding: 0 16px;
   }
 
   .about-me .skills_s .icons2_s {
     display: flex;
     flex-direction: row;
-    padding: 0%;
-    margin-top: 1%;
-    margin-bottom: 8%;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 38px;
   }
 
   .about-me .skills_s .icons2_s li {
@@ -686,154 +875,8 @@ a span::before {
   }
 
   .about-me .skills_s .icons2_s li img {
-    width: 12.5vw;
-    padding: 0% 10%;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 1315px) {
-  .about-me {
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
-    width: 100%;
-    height: auto;
-    padding: 14% 5%;
-  }
-
-  .about-me .title {
-    width: 100%;
-    height: auto;
-    margin: 0% auto 2%;
-    display: flex;
-    justify-content: center;
-    font-family: "Titan One", cursive;
-    font-size: 4vw;
-    color: rgb(255, 181, 91);
-  }
-
-  .about-me .info {
-    width: 100%;
-    margin: 0%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0px 2%;
-  }
-
-  .about-me .info img {
-    width: 20vw;
-    height: auto;
-    margin-right: 16px;
-    border-style: solid dashed solid solid;
-    border-color: rgb(255, 181, 91);
-    border-width: 5px;
-    border-radius: 16px;
-  }
-
-  .about-me .info .information {
-    width: 60vw;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-style: solid solid solid dashed;
-    border-color: rgb(255, 181, 91);
-    border-width: 5px;
-    border-radius: 16px;
-    background-image: url("img/airplane.png");
-    background-repeat: no-repeat;
-    background-size: 30% 80%;
-    background-position: 94% 50%;
-  }
-
-  .about-me .info .information_s {
-    display: none;
-  }
-
-  .about-me .info .information .item1 {
-    display: flex;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 500;
-    justify-content: center;
-  }
-
-  .about-me .info .information .item1 .name {
-    text-align: center;
-    font-size: 1.5vw;
-  }
-
-  .about-me .info .information .item1 .education {
-    margin: 0px 0px 0px 12%;
-    text-align: center;
-    font-size: 1.5vw;
-  }
-
-  .about-me .info .information .item1 .call {
-    margin: 0px 0px 0px 12%;
-    text-align: center;
-    font-size: 1.5vw;
-  }
-
-  .about-me .info .information .item2 {
-    display: flex;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 600;
-    font-size: 3.3vw;
-    justify-content: center;
-  }
-
-  .about-me .info .information .item2 .contents {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .about-me .skills {
-    width: 100%;
-    margin: 0%;
-    margin: 5.5vh 0% 1vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 2%;
-  }
-
-  .about-me .skills .item3 {
-    display: flex;
-    justify-content: center;
-    font-family: "Titan One", cursive;
-    font-weight: 400;
-    font-size: 3.5vw;
-    background-color: rgb(255, 181, 91);
-    color: white;
-    padding: 0%;
-    margin: 0%;
-    border-radius: 30px;
-  }
-
-  .about-me .skills .icons {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0%;
-    margin: 2.5% 0% 0%;
-  }
-
-  .about-me .skills .icons li {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .about-me .skills .icons li img {
-    width: 8vw;
-    height: auto;
-  }
-
-  .about-me .skills_s {
-    display: none;
+    width: 130px;
+    padding: 0 16px;
   }
 }
 
@@ -845,7 +888,7 @@ a span::before {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 #portfolio .portfolio_s {
@@ -1384,7 +1427,7 @@ a span::before {
 
 /* contact */
 .contact {
-  margin: 240px 0 0;
+  margin: 200px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
