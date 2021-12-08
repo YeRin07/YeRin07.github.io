@@ -25,6 +25,12 @@ body {
   height: 100%;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Header */
 header .container #navbar {
   list-style: none;
@@ -94,7 +100,7 @@ header .container #navbar a:hover {
   header .container .navbar__toogleBtn {
     display: flex;
     align-items: flex-end;
-    font-size: 24px;
+    font-size: 26px;
     margin: 2% 2.3% 0px 0px;
     padding: 0;
     top: 0;
@@ -314,7 +320,7 @@ a span::before {
     color: white;
     font-size: 60px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .main .job {
