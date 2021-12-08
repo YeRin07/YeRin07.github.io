@@ -100,8 +100,8 @@ header .container #navbar a:hover {
   header .container .navbar__toogleBtn {
     display: flex;
     align-items: flex-end;
-    font-size: 26px;
-    margin: 2% 2.3% 0px 0px;
+    font-size: 28px;
+    margin: 4% 4.5% 0px 0px;
     padding: 0;
     top: 0;
     background-color: white;
