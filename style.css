@@ -100,8 +100,8 @@ header .container #navbar a:hover {
   header .container .navbar__toogleBtn {
     display: flex;
     align-items: flex-end;
-    font-size: 28px;
-    margin: 4% 4.5% 0px 0px;
+    font-size: 26px;
+    margin: 2% 2.3% 0px 0px;
     padding: 0;
     top: 0;
     background-color: white;
@@ -952,12 +952,20 @@ a span::before {
   justify-content: space-between;
 }
 
+#portfolio div+div+div {
+  margin-top:140px;
+}
+
 #portfolio .portfolio-1 img {
   width: 500px;
   height: 540px;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   object-fit: fill;
+}
+
+#portfolio .portfolio-1+div+div img {
+  object-fit: none;
 }
 
 #portfolio .page-1 {
@@ -984,6 +992,7 @@ a span::before {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 #portfolio .page-1 .text-1-4 {
@@ -994,6 +1003,11 @@ a span::before {
   justify-content: space-around;
   align-self: flex-end;
   margin-top: 36px;
+}
+
+#portfolio div+div+div .page-1 .text-1-4 {
+  justify-content: start;
+  margin-left: 14px;
 }
 
 #portfolio .page-1 .text-1-4 .page1_git {
@@ -1069,6 +1083,7 @@ a span::before {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 #portfolio .page-2 .text-2-4 {
@@ -1077,6 +1092,9 @@ a span::before {
   font-weight: 400;
   text-align: center;
   margin-top: 36px;
+  display: flex;
+  justify-content: start;
+  margin-left: 14px;
 }
 
 #portfolio .page-2 .text-2-4 .page2_git {
@@ -1124,7 +1142,7 @@ a span::before {
   height: 540px;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  object-fit: fill;
+  object-fit: none;
 }
 
 @media all and (min-width: 768px) and (max-width: 1315px) {
