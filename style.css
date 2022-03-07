@@ -1321,11 +1321,11 @@ a span::before {
     margin-top: 8px;
   }
 
-  #portfolio .portfolio_s .s_1 .s1_bottom .s1_button {
+  #portfolio .portfolio_s .s1_button {
     text-align: center;
   }
 
-  #portfolio .portfolio_s .s_1 .s1_bottom .s1_button .s_git {
+  #portfolio .portfolio_s .s_git {
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -1339,13 +1339,13 @@ a span::before {
     font-weight: 500;
   }
 
-  #portfolio .portfolio_s .s_1 .s1_bottom .s1_button .s_git:hover {
+  #portfolio .portfolio_s .s1_button .s_git:hover {
     color: white;
     background-color: rgb(255, 181, 91);
     border-color: rgb(255, 181, 91);
   }
 
-  #portfolio .portfolio_s .s_1 .s1_bottom .s1_button .s_site {
+  #portfolio .portfolio_s .s_site {
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -1359,7 +1359,7 @@ a span::before {
     font-weight: 500;
   }
 
-  #portfolio .portfolio_s .s_1 .s1_bottom .s1_button .s_site:hover {
+  #portfolio .portfolio_s .s_site:hover {
     color: white;
     background-color: rgb(255, 181, 91);
     border-color: rgb(255, 181, 91);
